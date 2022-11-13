@@ -1,11 +1,11 @@
 @font-face {
-  font-family: "Open Sans", sans-serif;
-  src: url("assets/fonts/OpenSans-VariableFont_wdth,wght.ttf");
+  font-family: "Open Sans";
+  src: url("../../assets/fonts/OpenSans-VariableFont_wdth,wght.ttf");
 }
 
 @font-face {
-  font-family: Neucha, cursive;
-  src: url("assets/fonts/Neucha-Regular.ttf");
+  font-family: Neucha;
+  src: url("../../assets/fonts/Neucha-Regular.ttf");
 }
 
 :root {
@@ -21,25 +21,103 @@
 }
 
 body {
+  margin: 0;
+
   color: var(--dark);
   font: 16px/1.6em "Open Sans", sans-serif;
 }
 
 .h {
+  margin-top: 0;
+
+  font-weight: 400;
   font-family: Neucha, cursive;
   line-height: 1.2em;
 }
 
-h1 { font-size: 72px; }
+h1 {
+  margin-bottom: 185px;
+
+  font-size: 72px;
+}
 
 h2 { font-size: 60px; }
 
 h3 { font-size: 34px; }
 
-.sc {
-  padding: 100px 0;
+.h-align-left { text-align: left; }
 
-  text-align: center;
+.sc {
+  position: relative;
+
+  padding: 100px 0;
 }
 
-div { width: 1110; }
+.ct {
+  position: relative;
+
+  width: 1110px;
+
+  margin: 0 auto;
+}
+
+.bg-light::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -20;
+
+  width: 100%;
+  height: 100%;
+
+  background-image: url("../../assets/images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+}
+
+.bg-light {
+  z-index: -30;
+
+  background-color: var(--light);
+}
+
+.img-main {
+  position: absolute;
+  top: -55px;
+  right: -270px;
+  z-index: -10;
+
+  height: 525px;
+}
+
+.cl {
+  column-count: 2;
+  column-gap: 30px;
+}
+
+.bn-detail {
+  display: block;
+  width: fit-content;
+
+  margin-top: 40px;
+  padding: 12px 24px;
+}
+
+.bn-primary {
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background: var(--primary);
+}
+
+.tx-primary { color: var(--primary); }
+
+.tx-white { color: var(--white); }
+
+p:first-of-type {
+  break-after: column;
+}
