@@ -51,6 +51,7 @@ body {
 /* Section */
 .section {
   position: relative;
+  z-index: 10;
 
   padding: 100px 0;
 }
@@ -64,7 +65,13 @@ body {
 }
 
 /* Heading */
-.heading {
+h1,
+h2,
+h3,
+h4,
+.font-family-neucha {
+  color: var(--primary);
+
   font-weight: 400;
   font-family: Neucha, cursive;
   line-height: 1.2em;
@@ -96,11 +103,13 @@ h5 {
   margin: 0 0 20px;
   padding: 5px 10px;
 
+  font-size: 14px;
   line-height: 1.2em;
   text-transform: uppercase;
 }
 
 /* Background */
+.background-brown::before,
 .background-light::before {
   content: "";
 
@@ -118,23 +127,13 @@ h5 {
   opacity: 0.1;
 }
 
-.background-light::after {
-  content: "";
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -30;
-
-  width: 100%;
-  height: 100%;
-
-  background-color: var(--light);
-}
+.background-light { background-color: var(--light); }
 
 .background-primary-dark { background-color: var(--primary-dark); }
 
 .background-brown { background-color: var(--brown); }
+
+.background-white { background-color: var(--white); }
 
 /* Image */
 .image-main {
@@ -146,10 +145,18 @@ h5 {
   height: 525px;
 }
 
-.image-1 {
+.image-float-left {
   float: left;
 
   margin: 0 30px 100px 0;
+
+  vertical-align: middle;
+}
+
+.image-float-right {
+  float: right;
+
+  margin: 0 0 100px 30px;
 
   vertical-align: middle;
 }
@@ -190,6 +197,10 @@ h5 {
 .text-color-bootstrap-dark { color: var(--bootstrap-dark); }
 
 .text-color-dark-50 { color: var(--dark-50); }
+
+.text-color-white-50 { color: var(--white-50); }
+
+.text-color-brown { color: var(--brown); }
 
 /* Paragraph */
 p { margin: 0; }
