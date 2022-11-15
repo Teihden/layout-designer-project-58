@@ -80,7 +80,7 @@ h4,
 .h-margin-bottom-30 { margin-bottom: 30px; }
 
 h1 {
-  margin: 0 0 197px;
+  margin: 0 0 201px;
 
   font-size: 72px;
 }
@@ -142,7 +142,7 @@ section::before {
 /* Image */
 .image-main {
   position: absolute;
-  top: -55px;
+  top: -50px;
   right: -270px;
   z-index: -10;
 
