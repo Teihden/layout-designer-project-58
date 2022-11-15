@@ -112,8 +112,6 @@ h5 {
 /* Background */
 header::before,
 section::before {
-  content: "";
-
   position: absolute;
   top: 0;
   left: 0;
@@ -126,6 +124,8 @@ section::before {
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.1;
+
+  content: "";
 }
 
 .background-light { background-color: var(--light); }
@@ -277,8 +277,8 @@ p { margin-bottom: 0; }
 .flex-container-footer {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 
   margin-bottom: 76px;
 }
