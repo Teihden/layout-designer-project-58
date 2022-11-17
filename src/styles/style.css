@@ -43,6 +43,8 @@ body {
   left: 50%;
   z-index: 10;
 
+  border-style: none;
+
   transform: translateX(-50%);
 }
 
@@ -194,7 +196,6 @@ section::before {
 .button-submit:hover { background: var(--primary-hover); }
 
 /* Form */
-
 label {
   display: block;
 
