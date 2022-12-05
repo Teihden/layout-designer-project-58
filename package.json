@@ -1,13 +1,14 @@
 {
-  "name": "html5-css-boilerplate",
-  "version": "0.1.0",
-  "description": "HTML5/CSS Boilerplate with HTMLHint and StyleLint",
+  "name": "layout-designer-project-58",
+  "version": "1.0.0",
+  "description": "First project",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hexlet-boilerplates/html-boilerplate.git"
+    "url": "https://github.com/Teihden/layout-designer-project-58"
   },
   "main": "",
   "devDependencies": {
+    "git-scripts": "^0.6.4",
     "htmlhint": "^1.1.0",
     "stylelint": "^14.2.0",
     "stylelint-config-rational-order": "^0.1.2",
@@ -17,6 +18,12 @@
     "stylelint-scss": "^4.1.0",
     "surge": "^0.23.1"
   },
-  "author": "Nikita Mikhaylov",
-  "license": "ISC"
+  "scripts": {
+    "deploy": "surge ./src https://cogn-distort.surge.sh"
+  },
+  "author": "Teihden",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Teihden/layout-designer-project-58/issues"
+  }
 }
