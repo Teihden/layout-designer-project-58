@@ -19,7 +19,7 @@
     "surge": "^0.23.1"
   },
   "scripts": {
-    "deploy": "surge --project ./src --domain https://cogn-distort.surge.sh"
+    "deploy": "surge --project ./src --domain https://cogn-biases.surge.sh"
   },
   "git": {
   "scripts": {
