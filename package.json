@@ -19,7 +19,12 @@
     "surge": "^0.23.1"
   },
   "scripts": {
-    "deploy": "surge ./src https://cogn-distort.surge.sh"
+    "deploy": "surge --project ./src --domain https://cogn-distort.surge.sh"
+  },
+  "git": {
+  "scripts": {
+    "pre-push": "npm run deploy"
+    }
   },
   "author": "Teihden",
   "license": "ISC",
