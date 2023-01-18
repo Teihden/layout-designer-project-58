@@ -1,7 +1,7 @@
 {
   "name": "layout-designer-project-58",
   "version": "1.0.0",
-  "description": "First project",
+  "description": "Project Cognitive biases (Hexlet's educational project - a landing page)",
   "repository": {
     "type": "git",
     "url": "https://github.com/Teihden/layout-designer-project-58"
@@ -20,11 +20,6 @@
   },
   "scripts": {
     "deploy": "surge --project ./src --domain https://cogn-biases.surge.sh"
-  },
-  "git": {
-  "scripts": {
-    "pre-push": "npm run deploy"
-    }
   },
   "author": "Teihden",
   "license": "ISC",

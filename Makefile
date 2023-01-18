@@ -3,8 +3,7 @@ install:
 
 lint:
 	npx stylelint ./src/styles/*.css
-	npx stylelint ./src/styles/**/*.scss
 	npx htmlhint ./src/*.html
 
 deploy:
-	npx surge ./src/
+	npx surge --project ./src --domain https://cogn-biases.surge.sh
