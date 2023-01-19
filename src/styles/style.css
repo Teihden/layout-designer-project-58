@@ -342,7 +342,7 @@ p { margin-bottom: 0; }
 
 /* Section-navigation */
 .card-navigation {
-  flex-basis: 350px;
+  flex: 1 1 350px;
   box-sizing: border-box;
 }
 
@@ -350,8 +350,8 @@ p { margin-bottom: 0; }
 
 .card-navigation a { text-decoration: none; }
 
-.card-navigation:hover,
-.card-navigation:hover * {
+.card-navigation:not(:first-child):hover,
+.card-navigation:not(:first-child):hover * {
   color: var(--white);
 
   background-color: var(--primary);
