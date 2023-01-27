@@ -10,12 +10,16 @@ https://cogn-biases.surge.sh
 ## Setup
 
 ```bash
+# Install dependencies
 make install
 ```
 
 ## CLI
 
 ```bash
+# Runs Stylelint, HTMLHint against source code for quality
 make lint
+
+# Deploys directory `src/` to Surge
 make deploy
 ```

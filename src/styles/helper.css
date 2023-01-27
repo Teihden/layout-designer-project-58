@@ -1,0 +1,83 @@
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/* Margins */
+.margin-top-0 { margin-top: 0; }
+
+.margin-top-40 { margin-top: 40px; }
+
+.margin-0 { margin: 0; }
+
+.margin-bottom-4 { margin-bottom: 4px; }
+
+.margin-bottom-9 { margin-bottom: 9px; }
+
+.margin-bottom-30 { margin-bottom: 30px; }
+
+.margin-bottom-40 { margin-bottom: 40px; }
+
+.margin-bottom-76 { margin-bottom: 76px; }
+
+.margin-bottom-100 { margin-bottom: 100px; }
+
+.margin-bottom-185 { margin-bottom: 185px; }
+
+/* Paddings */
+.padding-0 { padding: 0; }
+
+.padding-55 { padding: 55px; }
+
+.padding-top-100 { padding-top: 100px; }
+
+.padding-right-10 { padding-right: 10px; }
+
+.padding-right-55 { padding-right: 55px; }
+
+.padding-bottom-385 { padding-bottom: 385px; }
+
+/* Font-sizes */
+.font-size-12 { font-size: 12px; }
+
+.font-size-14 { font-size: 14px; }
+
+.font-size-24 { font-size: 24px; }
+
+.font-size-34 { font-size: 34px; }
+
+/* Text-color */
+.text-color-white { color: var(--white); }
+
+.text-color-white-50 { color: var(--white-50); }
+
+.text-color-dark { color: var(--dark); }
+
+.text-color-dark-50 { color: var(--dark-50); }
+
+.text-color-bootstrap-dark { color: var(--bootstrap-dark); }
+
+.text-color-brown { color: var(--brown); }
+
+.text-color-blue { color: var(--blue); }
+
+/* Text-align */
+.align-left { text-align: left; }
+
+.align-center { text-align: center; }
+
+/* Backgrounds */
+.background-light { background-color: var(--light); }
+
+.background-primary-dark { background-color: var(--primary-dark); }
+
+.background-brown { background-color: var(--brown); }
+
+.background-white { background-color: var(--white); }
+
+.background-primary { background: var(--primary); }
+
+/* Display properties */
+.display-block { display: block; }
+
+/* Flexible Box Layout properties */
+.column-gap-30 { column-gap: 30px; }
